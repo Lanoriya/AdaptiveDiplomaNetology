@@ -56,6 +56,132 @@ body {
     z-index: 0;
 }
 
+.trend {
+    margin: 0 auto;
+    width: 1660px;
+}
+
+.trend__title {
+    font-family: Open Sans, sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+}
+
+.trend__text hr {
+    margin-top: 10px;
+    margin-bottom: 28px
+}
+
+.trend__photos {
+    display: flex;
+    margin-bottom: 64px;
+    column-gap: 4px;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    width: calc(25% - 4px);
+    position: relative;
+    padding: 9% 20px 20px;
+    background-color: #000000;
+    align-items: flex-end;
+    z-index: 0;
+}
+
+.card__trends-flower {
+    background-image: url("../images/trend1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card__trends-cheese {
+    background-image: url("../images/trend2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card__trends-mountain {
+    background-image: url("../images/trend3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card__trends-lemon {
+    background-image: url("../images/trend4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    background-color: #000000;
+    opacity: 0.6;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.card__picture {
+    width: 100%;
+    padding: 40px 40px 35px 25px;
+    border: solid 3px rgba(181, 159, 91, 0.6);
+}
+
+.card__list {
+    font-family: OpenSans-Bold, sans-serif;
+    text-transform: uppercase;
+    color: #b59f5b;
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    font-size: 14px;
+    bottom: 110px;
+    left: 56px;
+}
+
+.card__title {
+    left: 55px;
+    bottom: 56px;
+    max-width: 236px;
+}
+
+.card__list--item a {
+    color: inherit;
+}
+
+.card__title a {
+    text-transform: uppercase;
+    font-family: OpenSans-Bold, sans-serif;
+    max-width: 500px;
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+}
+
+.card__title a:hover {
+    color: #b59f5b;
+}
+
+.card__border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 55px 25px 52px 5px;
+    /*margin-bottom: 16px;*/
+    /*margin-left: 18px;*/
+}
+
+.card__category {
+    padding: 40px 40px 35px 25px;
+    border: 3px solid #7a6b40;
+}
+
 .container {
     width: 1200px;
     margin: 0 auto;
@@ -130,7 +256,7 @@ li:hover {
 }
 
 .midl {
-    margin-top: 64px;
+    margin-top: 60px;
 }
 
 .right {
@@ -140,6 +266,70 @@ li:hover {
 
 .photo_text {
     width: 780px;
+}
+
+.creators_title {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 64px;
+}
+
+.shop__item {
+    display: flex;
+    flex-direction: column;
+    width: calc(33.33% - 45px);
+}
+
+.shop__img {
+    margin: 0 auto;
+}
+
+.shop__item-border {
+    margin-top: -30px;
+    border: solid 3px rgba(181, 159, 91, 0.6);
+    padding: 40px 20px 25px 20px;
+    flex-grow: 1;
+}
+
+.shop__title {
+    text-transform: uppercase;
+    font-family: OpenSans-Bold, sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.shop__button {
+    float: right;
+    max-width: 140px;
+}
+
+.shop__price {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    font-family: OpenSans-Bold, sans-serif;
+    font-size: 20px;
+}
+
+.shop__price:nth-of-type(1) {
+    font-size: 14px;
+    text-decoration: line-through;
+}
+
+.shop__text {
+    margin-bottom: 20px;
+}
+
+.shop__text a {
+    color: #b59f5b;
 }
 
 .step {
