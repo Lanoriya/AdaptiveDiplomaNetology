@@ -5,9 +5,61 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/popup.css">
+  <link rel="stylesheet" href="./css/table.css">
   <title>Lanoriya</title>
 </head>
 <body>
+
+  <div class="pop_up" id="pop_up">
+    <div class="pop_up_container">
+      <div class="pop_up_body" id="pop_up_body">
+        <div class="trend__text">
+          <h2 class="trend__title">Ваш фидбек</h2>
+          <hr class="hr-line">
+        </div>
+        <div class="pop_up_select">
+          <span class="pop_up_selectText">
+            Как часто вы заходите на сайт?
+          </span>
+          <div class="choice">
+            <select class="pop_up_list" id="pop_list">
+              <option value="">Почти каждый день</option>
+              <option value="one">Раз в несколько дней</option>
+              <option value="two">Раз в несколько недель</option>
+              <option value="one">Несколько раз в год</option>
+            </select>
+          </div>
+        </div>
+        <div class="email_spam">
+          <span class="pop_up_selectText">
+            Вы подписаны на e-mail рассылку?
+          </span>
+          <div class="email_spam_radio">
+            <label class="checkbox-group">
+              <input type="radio" class="radio" name="choicer" required>
+              <span class="checkbox-text">Да</span>
+            </label>
+            <label class="checkbox-group">
+              <input type="radio" class="radio" name="choicer" required>
+              <span class="checkbox-text">Нет</span>
+            </label>
+          </div>
+        </div>
+        <div class="content">
+          <span class="pop_up_selectText">
+            Расскажите, какой контент вы хотели бы видеть на нашем сайте?
+          </span>
+          <div class="content__textarea">
+            <textarea type="text" placeholder="Может, больше рецептов?"></textarea>
+          </div>
+        </div>
+        <button class="button_sub"><span class="visually-hidden">Кнопка отправки поп</span>Отправить</button>
+        <div class="pop_up_close" id="pop_up_close">&#10006</div>
+      </div>
+    </div>
+  </div>
+
 <header class="header">
   <div class="container">
     <div class="logo-row">
@@ -35,6 +87,9 @@
             <a href="#">Контакты</a>
           </li>
         </ul>
+        <div class="pop_up_button">
+          <a href="#" id="open_pop_up">PopUp</a>
+        </div>
       </div>
     </div>
     <div class="header_title">
@@ -43,6 +98,50 @@
   </div>
 </header>
 <div class="midl">
+  <div class="trend">
+    <div class="trend__text">
+      <h2 class="trend__title">Сейчас в тренде</h2>
+      <hr class="hr-line">
+    </div>
+    <div class="trend__photos">
+      <div class="card card__trends-flower">
+        <div class="card__picture">
+          <ul class="card__list">
+            <li class="card__list--item"><a href="#">Lifestyle</a></li>
+            <li class="card__list--item"><a href="#">Interior</a></li>
+          </ul>
+          <div class="card__title"><a href="#">Сейчас в тренде: сад  на подоконнике</a></div>
+        </div>
+      </div>
+      <div class="card card__trends-cheese">
+        <div class="card__picture">
+          <ul class="card__list">
+            <li class="card__list--item"><a href="#">Food</a></li>
+          </ul>
+          <div class="card__title"><a href="#">Сыры на красивых картинках из интернета: какие они на
+            вкус?</a></div>
+        </div>
+      </div>
+      <div class="card card__trends-mountain">
+        <div class="card__picture">
+          <ul class="card__list">
+            <li class="card__list--item"><a href="#">Lifestyle</a></li>
+            <li class="card__list--item"><a href="#">Travel</a></li>
+          </ul>
+          <div class="card__title"><a href="#">Собираемся в первый поход в горы</a></div>
+        </div>
+      </div>
+      <div class="card card__trends-lemon">
+        <div class="card__picture">
+          <ul class="card__list">
+            <li class="card__list--item"><a href="#">Food</a></li>
+            <li class="card__list--item"><a href="#">Health</a></li>
+          </ul>
+          <div class="card__title"><a href="#">Сейчас в тренде: сколько витамина в лимонах</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="container right">
     <aside class="photo_text">
       <div class="step">
@@ -295,6 +394,71 @@
       </div>
     </div>
   </div>
+  <div class="creators">
+    <div class="container">
+      <div class="creators_title">
+        <h2 class="creators_h2 trend__title">Наши изделия</h2>
+        <hr class="hr-line">
+      </div>
+      <div class="details">
+        <div class="shop__item">
+          <div class="shop__img">
+            <picture>
+              <img src="./images/shop-item-desk1.jpg" alt="">
+            </picture>
+          </div>
+          <div class="shop__item-border">
+            <div class="shop__title">Подушки на диван</div>
+            <div class="shop__text"><p>Набор из двух подушек с модными принтами. Видео о создании <a href="#">здесь.</a></p></div>
+            <div class="shop__price">
+              <div class="shop__price--number">
+                <div class="shop__price">1000 Р</div>
+                <div class="shop__price">800 Р</div>
+              </div>
+              <a href="#"><button class="shop__button button_sub">В магазин</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="shop__item">
+          <div class="shop__img">
+            <picture>
+              <img src="./images/shop-item-desk2.jpg" alt="">
+            </picture>
+          </div>
+          <div class="shop__item-border">
+            <div class="shop__title">Кукла «Зайчик»</div>
+            <div class="shop__text"><p>Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a href="#">весенняя серия постов</a>
+              в блоге и несколько подкастов.</p></div>
+            <div class="shop__price">
+              <div class="shop__price--number">
+                <div class="shop__price"></div>
+                <div class="shop__price">3500 Р</div>
+              </div>
+              <a href="#"><button class="shop__button button_sub">В магазин</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="shop__item">
+          <div class="shop__img">
+            <picture>
+              <img src="./images/shop-item-desk3.jpg" alt="">
+            </picture>
+          </div>
+          <div class="shop__item-border">
+            <div class="shop__title">Подушки на диван</div>
+            <div class="shop__text"><p>Необычная рамка для украшения дома из видео <a href="#">«Как сделать рамку из подручных средств за 30 минут»</a></p></div>
+            <div class="shop__price">
+              <div class="shop__price--number">
+                <div class="shop__price">500 Р</div>
+                <div class="shop__price">400 Р</div>
+              </div>
+              <a href="#"><button class="shop__button button_sub">В магазин</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 <footer class="footer">
   <div class="container">
@@ -311,6 +475,7 @@
       <a href="#">Copyright © 2009–2019 City Blog LLC.</a>
     </div>
   </div>
+  <script src="./js/main.js"></script>
 </footer>
 </div>
 </body>
