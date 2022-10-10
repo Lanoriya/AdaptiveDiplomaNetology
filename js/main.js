@@ -10,3 +10,10 @@ openPopUp.addEventListener('click', function(e) {
 closePopUp.addEventListener('click', () => {
     popUp.classList.remove('active');
 })
+
+let navButton = document.getElementById('nav-btn');
+let navList = document.getElementById('nav-list');
+
+navButton.onclick = function() {
+    navList.classList.toggle('close');
+}

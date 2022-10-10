@@ -78,6 +78,7 @@
     background-color: #f4f7f6;
     padding-left: 18px;
     color: #939594;
+    cursor: pointer;
 }
 
 .pop_up_list {
@@ -104,6 +105,10 @@
 
 .email_spam_radio {
     display: flex;
+}
+
+.checkbox-group {
+    cursor: pointer;
 }
 
 .checkbox-text {
@@ -165,6 +170,7 @@
 .pop_up_body button {
     margin: 0;
     width: 100%;
+    transition: background-color .2s ease;
 }
 
 .pop_up_close {

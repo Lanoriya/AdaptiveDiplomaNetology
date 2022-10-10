@@ -1,0 +1,133 @@
+@media (min-width: 1200px) {
+    .header .mobile {
+        display: none;
+    }
+
+    .nav-button {
+        display: none;
+    }
+
+    .container {
+        width: 1200px;
+    }
+
+    .trend {
+        width: 1660px;
+    }
+
+    .text-line {
+        display: none;
+    }
+
+    .footer_container {
+        width: 1170px;
+    }
+
+    .container_last {
+        width: 1170px;
+    }
+}
+
+@media (max-width: 1199px) {
+    html {
+        width: 1199;
+    }
+
+    .header {
+        max-width: 100%;
+    }
+
+    .header::after {
+        background-image: url(../images/banner-bg-tablet.jpg);
+        background-position: center center;
+    }
+
+    .container {
+        margin-right: 35px;
+        margin-left: 35px;
+        padding: 0;
+    }
+
+    .pop_up_button {
+        right: 0;
+        top: 60px;
+    }
+
+    .nav .pop_up_button {
+        display: none;
+    }
+
+    .header_text {
+        margin-left: 1px;
+        margin-right: 1px;
+    }
+
+    .header ul {
+        margin: 0;
+    }
+
+    .header li:nth-of-type(1) {
+        margin-left: 20px;
+    }
+
+    .logo {
+        width: 160px;
+    }
+
+    .nav-button {
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .close {
+        display: block;
+    }
+
+    .card {
+        width: calc(50% - 4px);
+    }
+
+    .card:nth-child(4n+1),
+    .card:nth-child(4n+2) {
+        margin-bottom: 4px;
+    }
+
+    .step {
+        display: block;
+    }
+
+    .step img {
+        margin-bottom: 0;
+    }
+
+    .text-line {
+        width: 381px;
+        height: 3px;
+        background: #eeeeee;
+        border: none;
+        margin-left: 0;
+        margin-bottom: 40px;
+    }
+
+    .photo_texter {
+        max-width: 381px;
+    }
+
+    .details {
+        flex-wrap: wrap;
+    }
+
+    .shop__item {
+        width: calc(50% - 18px);
+    }
+
+    .shop__item:nth-child(4n+1),
+    .shop__item:nth-child(4n+2) {
+        margin-bottom: 28px;
+    }
+}

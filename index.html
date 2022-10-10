@@ -61,12 +61,15 @@
   </div>
 
 <header class="header">
+  <div class="pop_up_button">
+    <a href="#" id="open_pop_up">PopUp</a>
+  </div>
   <div class="container">
     <div class="logo-row">
       <a href="#">
         <img src="https://netology-code.github.io/html-2-diploma/sources/images/noemi-logo.svg" alt class="logo">
       </a>
-      <div class="nav">
+      <div class="nav" id="nav-list">
         <ul class="list">
           <li class="item">
             <a href="#">Главная</a>
@@ -87,10 +90,10 @@
             <a href="#">Контакты</a>
           </li>
         </ul>
-        <div class="pop_up_button">
-          <a href="#" id="open_pop_up">PopUp</a>
-        </div>
       </div>
+      <button id="nav-btn" class="nav-button">
+        <img id="nav-btn-img" src="./images/Shape.png" alt="nav-open">
+     </button>
     </div>
     <div class="header_title">
       <h1 class="header_text">Блог о творчестве, спорте, и образе жизни</h1>
@@ -137,7 +140,7 @@
             <li class="card__list--item"><a href="#">Food</a></li>
             <li class="card__list--item"><a href="#">Health</a></li>
           </ul>
-          <div class="card__title"><a href="#">Сейчас в тренде: сколько витамина в лимонах</a></div>
+          <div class="card__title"><a href="#">Сейчас в тренде: сколько витамина в лимонах?</a></div>
         </div>
       </div>
     </div>
@@ -164,6 +167,7 @@
             <p>Итак, вы уже в Питере. Раннее утро. Лед с рек и каналов уже ушел, запущены фонтаны города... Музеи ещё закрыты. Что посмотреть?</p>
           </div>
         </div>
+        <hr class="text-line">
       </div>
       <div class="step">
         <img src="https://netology-code.github.io/html-2-diploma/sources/images/last-post2.jpg" alt>
@@ -185,6 +189,7 @@
             <p>Расскажем, какие упражнения выбрать и как сделать коврик для занятий йогой из того, что можно найти в шкафу.</p>
           </div>
         </div>
+        <hr class="text-line">
       </div>
       <div class="step">
         <img src="https://netology-code.github.io/html-2-diploma/sources/images/last-post3.jpg" alt>
@@ -206,6 +211,7 @@
             <p>Мы составили список лучших летних фестивалей по всему миру.</p>
           </div>
         </div>
+        <hr class="text-line">
       </div>
       <div class="step">
         <img src="https://netology-code.github.io/html-2-diploma/sources/images/last-post4.jpg" alt>
@@ -227,6 +233,7 @@
             <p>Узнаем основы проектирования новых пищевых и около-пищевых опытов, вскроем физику, химию и микробиологию еды.</p>
           </div>
         </div>
+        <hr class="text-line">
       </div>
       <div class="step">
         <img src="https://netology-code.github.io/html-2-diploma/sources/images/last-post5.jpg" alt>
@@ -249,6 +256,7 @@
             <p>Подушки для дивана целесообразнее заказать в съемных чехлах на молнии, если потребуется чистка подушек, проще снять чехлы, чем везти подушку в химчистку.</p>
           </div>
         </div>
+        <hr class="text-line">
       </div>
       <div class="step">
         <img src="https://netology-code.github.io/html-2-diploma/sources/images/last-post6.jpg" alt>
@@ -270,6 +278,7 @@
             <p>Для начала нужно определиться, в каком формате пройдёт ваше путешествие. Это зависит от многих факторов, не только от ваших желаний и интересов.</p>
           </div>
         </div>
+        <hr class="text-line">
       </div>
       <div class="step">
         <img src="https://netology-code.github.io/html-2-diploma/sources/images/last-post4.jpg" alt>
@@ -404,6 +413,7 @@
         <div class="shop__item">
           <div class="shop__img">
             <picture>
+              <source srcset="./images/shop-item-tablet1.jpg" media="(max-width: 1199px)">
               <img src="./images/shop-item-desk1.jpg" alt="">
             </picture>
           </div>
@@ -412,8 +422,8 @@
             <div class="shop__text"><p>Набор из двух подушек с модными принтами. Видео о создании <a href="#">здесь.</a></p></div>
             <div class="shop__price">
               <div class="shop__price--number">
-                <div class="shop__price">1000 Р</div>
-                <div class="shop__price">800 Р</div>
+                <div class="shop__price">1000 ₽</div>
+                <div class="shop__price">800 ₽</div>
               </div>
               <a href="#"><button class="shop__button button_sub">В магазин</button></a>
             </div>
@@ -422,6 +432,7 @@
         <div class="shop__item">
           <div class="shop__img">
             <picture>
+              <source srcset="./images/shop-item-tablet2.jpg" media="(max-width: 1199px)">
               <img src="./images/shop-item-desk2.jpg" alt="">
             </picture>
           </div>
@@ -432,7 +443,7 @@
             <div class="shop__price">
               <div class="shop__price--number">
                 <div class="shop__price"></div>
-                <div class="shop__price">3500 Р</div>
+                <div class="shop__price">3500 ₽</div>
               </div>
               <a href="#"><button class="shop__button button_sub">В магазин</button></a>
             </div>
@@ -441,6 +452,7 @@
         <div class="shop__item">
           <div class="shop__img">
             <picture>
+              <source srcset="./images/shop-item-tablet3.jpg" media="(max-width: 1199px)">
               <img src="./images/shop-item-desk3.jpg" alt="">
             </picture>
           </div>
@@ -449,8 +461,8 @@
             <div class="shop__text"><p>Необычная рамка для украшения дома из видео <a href="#">«Как сделать рамку из подручных средств за 30 минут»</a></p></div>
             <div class="shop__price">
               <div class="shop__price--number">
-                <div class="shop__price">500 Р</div>
-                <div class="shop__price">400 Р</div>
+                <div class="shop__price">500 ₽</div>
+                <div class="shop__price">400 ₽</div>
               </div>
               <a href="#"><button class="shop__button button_sub">В магазин</button></a>
             </div>
