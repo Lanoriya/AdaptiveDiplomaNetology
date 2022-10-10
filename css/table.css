@@ -130,4 +130,8 @@
     .shop__item:nth-child(4n+2) {
         margin-bottom: 28px;
     }
+
+    .photo_texter:nth-last-child(1) {
+        margin-bottom: 70px;
+    }
 }
