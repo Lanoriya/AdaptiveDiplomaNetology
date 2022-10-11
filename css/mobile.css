@@ -1,0 +1,235 @@
+@media (max-width: 767px) {
+    .header {
+        background-image: url(../images/banner-mobile.jpg);
+        background-position: center center;
+        padding-bottom: 218px;
+        background-size: cover;
+    }
+
+    .header .container {
+        text-align: center;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .pop_up_body {
+        width: 330px;
+        padding: 30px 30px 30px 30px;
+    }
+
+    .pop_up_close {
+        font-size: 34px;
+        top: -42px
+    }
+
+    .checkbox-text::before {
+        width: 26px;
+        height: 26px;
+    }
+
+    .email_spam_radio {
+        column-gap: 33px;
+    }
+
+    .email_spam_radio input{
+        position: absolute;
+    }
+
+    .container {
+        margin-right: 15px;
+        margin-left: 15px;
+        padding: 0;
+        text-align: left;
+    }
+
+    .header_title {
+        margin-top: 46px;
+        width: 300px;
+    }
+
+    .header_text {
+        font-size: 26px;
+        line-height: 36px;
+    }
+
+    .logo-row {
+        margin-bottom: 174px;
+    }
+
+    .logo {
+        display: none;
+        width: 269px;
+    }
+
+    .logoMobile {
+        width: 270px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .midl {
+        margin-top: 40px;
+    }
+
+    .card {
+        width: 100%;
+        padding: 88px 15px 15px 15px;
+        margin-bottom: 4px;
+    }
+
+    .card__trends-flower {
+        background-size: cover ;
+        background-position: center center;
+    }
+
+    .card__trends-cheese {
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .card__trends-mountain {
+        background-position: center center;
+    }
+
+    .card__trends-lemon {
+        background-position: center center;
+    }
+
+    .card__picture {
+        padding: 33px 24px 30px 25px;
+    }
+
+    .card__list {
+        margin: 0;
+        margin-bottom: 12px;
+    }
+
+    .card__title {
+        max-width: 100%;
+    }
+
+    .card__title a {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .step img {
+        width: 100%;
+        margin: 0;
+    }
+
+    .right {
+        flex-wrap: wrap;
+    }
+
+    .photo_right {
+        width: 100%;
+    }
+
+    .right {
+        display: block;
+    }
+
+    .photo_text {
+        width: 100%;
+    }
+
+    .photo_texter {
+        max-width: 100%;
+    }
+
+    .step {
+        width: 100%;
+    }
+
+    .step::after {
+        content: "";
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 35px;
+        width: 100%;
+        height: 3px;
+        background: #eeeeee;
+    }
+
+    .text4 p {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .text_up {
+        margin-top: 16px;
+    }
+
+    .news_post {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .span_text {
+        font-size: 14px;
+
+    }
+
+    .news_post_h2 {
+        font-size: 16px;
+    }
+
+    .searcher input{
+        width: 100%;
+    }
+
+    .searcher button {
+        right: 0;
+    }
+
+    .posts {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    .posts button {
+        width: 100%;
+    }
+
+    .search_email {
+        margin-top: 23px;
+    }
+
+    .search_email input {
+        width: 100%;
+    }
+
+    .search_email {
+        width: 100%;
+    }
+
+    .tags {
+        margin-top: 44px;
+    }
+
+    .list1 a {
+        font-size: 12px;
+    }
+
+    .Tems {
+        display: block;
+    }
+
+    .Tems_title {
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .creators_title {
+        margin-top: 44px;
+    }
+
+    .shop__item {
+        width: calc(100%);
+    }
+}

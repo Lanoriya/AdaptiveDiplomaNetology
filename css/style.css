@@ -140,13 +140,9 @@ body {
     gap: 20px;
     list-style-type: none;
     font-size: 14px;
-    bottom: 110px;
-    left: 56px;
 }
 
 .card__title {
-    left: 55px;
-    bottom: 56px;
     max-width: 236px;
 }
 
@@ -186,10 +182,6 @@ body {
     position: relative;
     padding-left: 15px;
     padding-right: 15px;
-}
-
-.step img {
-    background-color: #eff6f1;
 }
 
 .logo-row {
@@ -263,6 +255,7 @@ li:hover {
 }
 
 .photo_text {
+    margin-right: 35px;
     width: 780px;
 }
 
@@ -338,10 +331,6 @@ li:hover {
     margin-bottom: 60px;
     margin-right: 28px;
     background-color: #eff6f1;
-    min-height: 294px;
-    min-width: 381px;
-    max-height: 294px;
-    max-width: 381px;
 }
 
 .text_up {

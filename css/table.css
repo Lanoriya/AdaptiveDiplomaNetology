@@ -3,6 +3,10 @@
         display: none;
     }
 
+    .logoMobile {
+        display: none;
+    }
+
     .nav-button {
         display: none;
     }
@@ -29,10 +33,6 @@
 }
 
 @media (max-width: 1199px) {
-    html {
-        width: 1199;
-    }
-
     .header {
         max-width: 100%;
     }
@@ -48,9 +48,26 @@
         padding: 0;
     }
 
+    .logoMobile {
+        display: none;
+    }
+
     .pop_up_button {
         right: 0;
         top: 60px;
+    }
+
+    .checkbox-text::before {
+        width: 26px;
+        height: 26px;
+    }
+
+    .email_spam_radio {
+        column-gap: 33px;
+    }
+
+    .email_spam_radio input{
+        position: absolute;
     }
 
     .nav .pop_up_button {
@@ -101,21 +118,36 @@
         display: block;
     }
 
-    .step img {
-        margin-bottom: 0;
-    }
-
-    .text-line {
-        width: 381px;
+    .step::after {
+        content: "";
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 35px;
+        width: 100%;
         height: 3px;
         background: #eeeeee;
-        border: none;
-        margin-left: 0;
-        margin-bottom: 40px;
     }
 
-    .photo_texter {
-        max-width: 381px;
+    .step img {
+        margin-bottom: 0;
+        width: 100%;
+    }
+
+    .text4 p {
+        padding: 0;
+    }
+
+    .text4 p:nth-child(2n) {
+        max-width: none;
+        padding-top: 25px;
+    }
+
+    .text_up {
+        margin-top: 16px;
+    }
+
+    .backphoto {
+        width: 100%;
     }
 
     .details {
@@ -129,9 +161,5 @@
     .shop__item:nth-child(4n+1),
     .shop__item:nth-child(4n+2) {
         margin-bottom: 28px;
-    }
-
-    .photo_texter:nth-last-child(1) {
-        margin-bottom: 70px;
     }
 }
