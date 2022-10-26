@@ -15,10 +15,6 @@
         width: 1200px;
     }
 
-    .trend {
-        width: 1660px;
-    }
-
     .text-line {
         display: none;
     }
@@ -116,16 +112,12 @@
 
     .step {
         display: block;
+        border-bottom: 3px solid #eeeeee;
+        margin-bottom: 42px;
     }
 
-    .step::after {
-        content: "";
-        display: block;
-        margin-top: 20px;
-        margin-bottom: 35px;
-        width: 100%;
-        height: 3px;
-        background: #eeeeee;
+    .step:nth-last-child(-n+1) {
+        border-bottom: none;
     }
 
     .step img {

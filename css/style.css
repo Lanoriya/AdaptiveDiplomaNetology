@@ -1,17 +1,24 @@
 @font-face {
-    font-family: OpenSans-Regular;
-    src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff);
-}
+    font-family: "OpenSans";
+    src: url("https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff");
+    font-weight: 400;
+    font-style: normal; 
+  }
+  
 @font-face {
-    font-family: OpenSans-Bold;
-    src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff);
-}
+    font-family: "OpenSans";
+    src: url("https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff");
+    font-weight: 700;
+    font-style: normal; 
+  }
 
 * {
     box-sizing: border-box;
 }
 
 ul {
+    font-family: "OpenSans", sans-serif;
+    font-weight: 400;
     padding: 0;
 }
 
@@ -61,16 +68,20 @@ body {
 }
 
 .trend__title {
-    font-family: Open Sans, sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 20px;
     text-transform: uppercase;
     text-align: center;
     margin: 0;
 }
 
-.trend__text hr {
-    margin-top: 10px;
-    margin-bottom: 28px
+.trend__title::after {
+    content: "";
+    display: block;
+    margin: 10px auto 28px auto;
+    width: 66px;
+    height: 3px;
+    background: #e1d9bd;
 }
 
 .trend__photos {
@@ -133,7 +144,8 @@ body {
 }
 
 .card__list {
-    font-family: OpenSans-Bold, sans-serif;
+    font-family: "OpenSans", sans-serif;
+    font-weight: 700;
     text-transform: uppercase;
     color: #b59f5b;
     display: flex;
@@ -152,7 +164,8 @@ body {
 
 .card__title a {
     text-transform: uppercase;
-    font-family: OpenSans-Bold, sans-serif;
+    font-family: "OpenSans", sans-serif;
+    font-weight: 700;
     max-width: 500px;
     font-size: 20px;
     line-height: 24px;
@@ -233,7 +246,8 @@ li:hover {
 }
 
 .header_text {
-    font-family: OpenSans-Bold, sans-serif;
+    font-family: "OpenSans", sans-serif;
+    font-weight: 700;
     color: #fff;
     text-transform: uppercase;
     font-size: 45px;
@@ -290,10 +304,10 @@ li:hover {
 
 .shop__title {
     text-transform: uppercase;
-    font-family: OpenSans-Bold, sans-serif;
+    font-family: "OpenSans", sans-serif;
+    font-weight: 700;
     font-size: 20px;
     line-height: 24px;
-    font-weight: 700;
     color: #000000;
 }
 
@@ -306,7 +320,8 @@ li:hover {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    font-family: OpenSans-Bold, sans-serif;
+    font-family: "OpenSans", sans-serif;
+    font-weight: 700;
     font-size: 20px;
 }
 
@@ -338,7 +353,8 @@ li:hover {
     flex-wrap: wrap;
     list-style-type: none;
     text-transform: uppercase;
-    font-family: OpenSans-Bold, sans-serif;
+    font-family: "OpenSans", sans-serif;
+    font-weight: 700;
     color: #b59f5b;
     font-size: 14px;
     margin: 0;
@@ -356,11 +372,11 @@ li:hover {
 
 .text2_art a{
     text-transform: uppercase;
-    font-family: OpenSans-Bold, sans-serif;
+    font-family: "OpenSans", sans-serif;
+    font-weight: 700;
     max-width: 500px;
     font-size: 20px;
     line-height: 24px;
-    font-weight: 700;
     margin-top: 14px;
     color: #000000;
 }
@@ -387,7 +403,8 @@ li:hover {
 }
 
 .text3 li:nth-child(n + 2) {
-    font-family: OpenSans-Bold, sans-serif;
+    font-family: "OpenSans", sans-serif;
+    font-weight: 700;
     color: #000000;
     margin-left: 15px;
 }
@@ -405,7 +422,8 @@ li:hover {
 }
 
 .news_post_h2 {
-    font-family: OpenSans-Bold;
+    font-family: "OpenSans", sans-serif;
+    font-weight: 700;
     font-size: 14px;
     text-transform: uppercase;
     margin: 0;
@@ -453,7 +471,8 @@ li:hover {
 }
 
 .span_text:nth-child(n + 2) {
-    font-family: OpenSans-Bold, sans-serif;
+    font-family: "OpenSans", sans-serif;
+    font-weight: 700;
     text-transform: uppercase;
     color: #000000;
 }
@@ -525,11 +544,12 @@ li:hover {
     background-repeat: no-repeat;
     background-size: 17px 17px;
     background-position: center center;
-    width: 270px;
     height: 48px;
+    width: 100%;
     margin-top: 18px;
     font-size: 14px;
-    font-family: OpenSans-Bold, sans-serif;
+    font-family: "OpenSans", sans-serif;
+    font-weight: 700;
     text-transform: uppercase;
     color: #fff;
     cursor: pointer;
@@ -548,7 +568,8 @@ li:hover {
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
-    font-family: OpenSans-Bold, sans-serif;
+    font-family: "OpenSans", sans-serif;
+    font-weight: 700;
 }
 
 .list1 {
@@ -576,7 +597,8 @@ li:hover {
 
 .words_li_table a{
     color: #000000;
-    font-family: OpenSans-Bold, sans-serif;
+    font-family: "OpenSans", sans-serif;
+    font-weight: 700;
 }
 
 .words_li_table {
@@ -586,7 +608,8 @@ li:hover {
     padding-bottom: 12px;
     text-decoration: none;
     line-height: 36px;
-    font-family: OpenSans-Bold, sans-serif;
+    font-family: "OpenSans", sans-serif;
+    font-weight: 700;
     position: relative;
 }
 
@@ -599,8 +622,8 @@ li:hover {
     position: absolute;
     font-size: 12px;
     color: #b59f5b;
+    font-family: "OpenSans", sans-serif;
     font-weight: 700;
-    font-family: OpenSans-Bold, sans-serif;
     text-decoration: none;
     margin-left: 4px;
     bottom: 16px;
@@ -644,7 +667,8 @@ li:hover {
 }
 
 .container_last a {
-    font-family: OpenSans-Bold, sans-serif;
+    font-family: "OpenSans", sans-serif;
+    font-weight: 700;
     color: #999999;
     font-size: 12px;
 }
