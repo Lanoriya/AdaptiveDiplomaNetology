@@ -102,12 +102,7 @@
     }
 
     .card {
-        width: calc(50% - 4px);
-    }
-
-    .card:nth-child(4n+1),
-    .card:nth-child(4n+2) {
-        margin-bottom: 4px;
+        width: calc(50% - 2px);
     }
 
     .step {
@@ -153,5 +148,18 @@
     .shop__item:nth-child(4n+1),
     .shop__item:nth-child(4n+2) {
         margin-bottom: 28px;
+    }
+}
+
+@media (max-width: 1199px) and (orientation: portrait){
+    .card:nth-child(4n+1),
+    .card:nth-child(4n+2) {
+        margin-bottom: 4px;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1200px) and (orientation: landscape) {
+    .card {
+        width: calc(25% - 3px);
     }
 }
