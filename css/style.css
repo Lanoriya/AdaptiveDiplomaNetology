@@ -313,7 +313,13 @@ li:hover {
 
 .shop__button {
     float: right;
+    text-align: center;
+    padding-top: 14px;
     max-width: 140px;
+}
+
+.shop__button.button_sub {
+    padding: 16px 6px 16px 6px;
 }
 
 .shop__price {
